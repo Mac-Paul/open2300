@@ -1,0 +1,15 @@
+Änderungen
+
+mysqlhistlog2300.c
+Fehler beim compilieren, Variable VERSION auf einen Wert gesetzt.
+char VERSION[7] = "1.15.01";
+
+mysql2300.sql
+UNIQUE KEY Angabe fehlerhaft
+TYPE=MyISAM; geändert nach -> ENGINE=MyISAM;
+
+SQL-Statement für aktuelle MySQL-Version (5.5.57) fehlerhaft. (01.12.2017)
+UNIQUE KEY `timestamp` (`timestamp`) geändert nach -> UNIQUE KEY `datetime` (`datetime`)
+
+Makefile
+Problem beim compilieren mit srv2300, beseitigt indem auskommentiert.

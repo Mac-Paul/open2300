@@ -1,0 +1,27 @@
+Raspberry Pi Installation
+
+zusätzliche Informationen zur README.md
+
+übersetzten von open2300 sollte mit diesen Schritten erfolgreich sein.
+
+System auf den aktuellen Stand bringen:
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+wenn die MySQL-Datenbank genutzt werden soll:
+prüfen ob die MySQL-Abhängigkeiten installiert sind.
+sudo apt list --installed | grep mysql
+in der Ergebnisliste sollten libmysqlclient-dev... und
+libmysqlclient... auftauchen. Wenn nicht, mit
+sudo apt-get install libmysqlclient-dev libmysqlclient18 installieren.
+Die Version von libmysqlclient[Nr] kann sich bei aktuelleren Versionen ändern
+
+Jetzt kann
+
+make
+sudo make install
+
+durchgeführt werden !!!
+
+Wenn alles ohne Fehler durchgelaufen ist, sollten
+die Programme in /usr/local/bin liegen

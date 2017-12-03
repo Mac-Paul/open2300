@@ -1,4 +1,4 @@
-open2300
+open2300_RPi
 
 version 1.11
 

@@ -31,6 +31,7 @@
  ********************************************************************/
 void print_usage(void)
 {
+	char VERSION[7] = "1.15.01";
 	printf("\n");
 	printf("mysqlhistlog2300 - Log history data from WS-2300 to MySQL.\n");
 	printf("Version %s (C)2007 Kenneth Lavrsen, Lars Hinrichsen.\n", VERSION);

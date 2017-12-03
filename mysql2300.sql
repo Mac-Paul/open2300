@@ -19,5 +19,5 @@ CREATE TABLE `weather` (
   `rel_pressure` decimal(5,1) NOT NULL default '0.0',
   `tendency` varchar(7) NOT NULL default '',
   `forecast` varchar(6) NOT NULL default '',
-  UNIQUE KEY `timestamp` (`timestamp`)
-) TYPE=MyISAM;
+  UNIQUE KEY `datetime` (`datetime`)
+) ENGINE=MyISAM;
